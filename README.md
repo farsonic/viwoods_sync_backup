@@ -8,6 +8,13 @@ A Python command-line tool to sync notes and files from a Viwoods e-ink tablet t
 
 This tool connects to the tablet's local file transfer service, recursively scans the folder structure, and downloads files. It uses a local SQLite database (`.sync_db.sqlite`) to track file metadata (update time, size) and only downloads new or modified files, making subsequent syncs much faster.
 
+
+[![Watch the video](https://img.youtube.com/vi/I53uKuBrpG0/hqdefault.jpg)](https://www.youtube.com/embed/I53uKuBrpG0)
+
+[<img src="https://img.youtube.com/vi/I53uKuBrpG0/hqdefault.jpg" width="600" height="300"
+/>](https://www.youtube.com/embed/I53uKuBrpG0)
+
+
 ## Features
 
 * **Recursive Sync:** Downloads the entire folder structure from the tablet.
