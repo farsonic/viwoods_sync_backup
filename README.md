@@ -2,6 +2,10 @@
 
 A Python command-line tool to sync notes and files from a Viwoods e-ink tablet to a local directory.
 
+
+<a href="https://buymeacoffee.com/farsonic" target="_blank"><img src="https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png" alt="Buy Me A Coffee" style="height: 60px; width: 217px;" ></a>
+
+
 This tool connects to the tablet's local file transfer service, recursively scans the folder structure, and downloads files. It uses a local SQLite database (`.sync_db.sqlite`) to track file metadata (update time, size) and only downloads new or modified files, making subsequent syncs much faster.
 
 ## Features
