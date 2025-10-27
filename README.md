@@ -1,0 +1,39 @@
+# Viwoods Sync Tool
+
+A Python command-line tool to sync notes and files from a Viwoods e-ink tablet to a local directory.
+
+This tool connects to the tablet's local file transfer service, recursively scans the folder structure, and downloads files. It uses a local SQLite database (`.sync_db.sqlite`) to track file metadata (update time, size) and only downloads new or modified files, making subsequent syncs much faster.
+
+## Features
+
+* **Recursive Sync:** Downloads the entire folder structure from the tablet.
+* **Delta Syncing:** Tracks synced files and only downloads new or modified files.
+* **Targeted Sync:** Choose to sync all root folders (`--all`) or only specific sub-folders (`--folder`).
+* **Force Sync:** A `--force` flag allows you to clear the local cache and re-download all files.
+* **Correct API Usage:** Uses the proper 3-step API (`getChildFolderList` -> `packageFile` -> `download`) to reliably download `.note` files.
+
+## Installation
+
+1.  Clone this repository:
+    ```bash
+    git clone [https://github.com/your-username/viwoods-sync.git](https://github.com/your-username/viwoods-sync.git)
+    cd viwoods-sync
+    ```
+
+2.  Create and activate a Python virtual environment:
+    ```bash
+    python3 -m venv venv
+    source venv/bin/activate
+    ```
+
+3.  Install the required dependencies:
+    ```bash
+    pip install -r requirements.txt
+    ```
+
+## Usage
+
+You must provide the IP address of your Viwoods tablet. You can find this in the tablet's Wi-Fi settings.
+
+```bash
+python3 viwoods_sync.py <ip_address> [options]
