@@ -10,7 +10,6 @@ This tool connects to the tablet's local file transfer service, recursively scan
 * **Delta Syncing:** Tracks synced files and only downloads new or modified files.
 * **Targeted Sync:** Choose to sync all root folders (`--all`) or only specific sub-folders (`--folder`).
 * **Force Sync:** A `--force` flag allows you to clear the local cache and re-download all files.
-* **Correct API Usage:** Uses the proper 3-step API (`getChildFolderList` -> `packageFile` -> `download`) to reliably download `.note` files.
 
 ## Installation
 
@@ -33,7 +32,9 @@ This tool connects to the tablet's local file transfer service, recursively scan
 
 ## Usage
 
-You must provide the IP address of your Viwoods tablet. You can find this in the tablet's Wi-Fi settings.
+You must provide the IP address of your Viwoods tablet. You can find this when you use the WLAN Transfer option where the 
+IP Address is shown. You don't need to specify the port. If you want to restore a lost .note file use the WALN Transfer web
+page to upload it. 
 
 ```bash
 python3 viwoods_sync.py <ip_address> [options]
