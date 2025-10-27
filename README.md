@@ -11,8 +11,6 @@ This tool connects to the tablet's local file transfer service, recursively scan
 
 [![Watch the video](https://img.youtube.com/vi/I53uKuBrpG0/hqdefault.jpg)](https://www.youtube.com/embed/I53uKuBrpG0)
 
-[<img src="https://img.youtube.com/vi/I53uKuBrpG0/hqdefault.jpg" width="600" height="300"
-/>](https://www.youtube.com/embed/I53uKuBrpG0)
 
 
 ## Features
